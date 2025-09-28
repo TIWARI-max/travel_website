@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <style>
+    @media (max-width: 600px) {
+        nav ul li:first-child {
+            display: none;
+        }
+    }
+</style> -->
+  <title>Yatra-Home</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<link rel="icon" type="image/png" href="image/android-chrome-192x192.png">
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Yatra Logo" style="height:50px; vertical-align:middle;">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+         <li><a href="contact_us.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" style="background-image: url('image/home.jpg'); background-size: cover; background-position: center;">
+    <h2>Discover the World with Us</h2>
+    <button onclick="document.querySelector('.featured').scrollIntoView({ behavior: 'smooth' });">Explore Now</button>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="featured">
+    <h3>Featured Destinations</h3>
+    <div class="destinations">
+      <article class="destination">
+        <img src="image/ayodhya.jpg" alt="Ayodhya">
+        <h4>Ayodhya – City of Lord Rama</h4>
+        <p>Ancient temples, spiritual heritage, and sacred ghats.</p>
+      </article>
+      <article class="destination">
+        <img src="image/kerala.jpg" alt="Kerala">
+        <h4>Kerala – God’s Own Country</h4>
+        <p>Backwaters, beaches, and lush greenery await.</p>
+      </article>
+      <article class="destination">
+        <img src="image/varanasi.jpg" alt="Varanasi">
+        <h4>Varanasi – Spiritual Heart</h4>
+        <p>Experience life along the sacred Ganges.</p>
+      </article>
+    </div>
+  </section>
+  <section class="featured">
+     <div class="destinations">
+      <article class="destination">
+        <img src="image/goa.jpg" alt="Goa">
+        <h4>Goa – Beaches & Fun</h4>
+        <p>Sun, sand, adventure, and vibrant nightlife.</p>
+      </article>
+      <article class="destination">
+        <img src="image/ladakh.jpg" alt="Ladakh">
+        <h4>Ladakh – Land of High Passes</h4>
+        <p>Breathtaking mountains, serene monasteries, and adventure.</p>
+      </article>
+      <article class="destination">
+        <img src="image/jaipur.jpg" alt="Jaipur">
+        <h4>Jaipur – The Pink City</h4>
+        <p>Majestic forts, colorful markets, and royal heritage.</p>
+      </article>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <small>© <span id="year"></span> Yatra | All Rights Reserved. </small>
+  </footer>
+
+  <script>
+    // small progressive enhancement
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
